@@ -64,3 +64,51 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+/* variables */
+:root {
+	--page-width: 900px;
+	--gray: #BEBEBE;
+}
+
+/* grid setup */
+.row {
+	display: block;
+	margin: 1em 0;
+	white-space: nowrap;
+}
+
+[class ^= "col-"], [class *= "col-"] {
+	display: inline-block;
+	padding: 0 0.5em;
+	vertical-align: top;
+	white-space: normal;
+}
+
+[class ^= "col-"]:first-child, [class *= "col-"]:first-child {
+	padding-left: 0;
+}
+
+[class ^= "col-"]:last-child, [class *= "col-"]:last-child {
+	padding-right: 0;
+}
+
+.col-full {
+	width: 100%;
+}
+
+.col-half {
+	width: calc(100% / 2);
+}
+
+.col-third {
+	width: calc(100% / 3);
+}
+
+/* actual styling begins */
+
+body {
+	margin: auto;
+	padding: 0 0.5em;
+	max-width: var(--page-width);
+}
