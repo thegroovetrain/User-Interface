@@ -113,11 +113,6 @@ body {
 	max-width: var(--page-width);
 }
 
-main {
-	border-top: solid 1px black;
-	border-bottom: solid 1px black;
-}
-
 h1 {
 	font-size: 4.5em;
 	padding-bottom: 10px;
@@ -132,7 +127,7 @@ a.button {
 
 a.button:hover {
 	color: white;
-	background: var(--gray);
+	background: black;
 }
 
 /* navigation */
@@ -164,6 +159,8 @@ nav a:hover {
 /* banner */
 
 #banner {
+	border-bottom: solid 1px black;
+	padding-bottom: 4.5em;
 	padding-top: 117px;
 	text-align: center;
 }
@@ -177,6 +174,10 @@ nav a:hover {
 }
 
 /* footer */
+
+footer {
+	border-top: solid 1px black;
+}
 
 #footer-copyright {
 	text-align: center;
