@@ -138,11 +138,17 @@ a.button:hover {
 /* navigation */
 
 nav {
+	background: var(--gray);
+	left: 0;
+	padding: 2.5em 0;
+	position: fixed;
+	right: 0;
 	text-align: center;
+	top: 0;
 }
 
 nav a {
-	color: var(--gray);
+	color: black;
 	margin-right: 3.5em;
 	text-decoration: none;
 }
@@ -152,13 +158,13 @@ nav a, nav img {
 }
 
 nav a:hover {
-	color: black;
-	text-decoration: underline;
+	font-weight: bold;
 }
 
 /* banner */
 
 #banner {
+	padding-top: 117px;
 	text-align: center;
 }
 
