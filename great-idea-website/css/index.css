@@ -64,3 +64,121 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+/* variables */
+:root {
+	--page-width: 900px;
+	--gray: #BEBEBE;
+}
+
+/* grid setup */
+.row {
+	display: block;
+	margin: 2.5em 0;
+	white-space: nowrap;
+}
+
+[class ^= "col-"], [class *= "col-"] {
+	display: inline-block;
+	padding: 0 0.5em;
+	vertical-align: top;
+	white-space: normal;
+}
+
+[class ^= "col-"]:first-child, [class *= "col-"]:first-child {
+	padding-left: 0;
+}
+
+[class ^= "col-"]:last-child, [class *= "col-"]:last-child {
+	padding-right: 0;
+}
+
+.col-full {
+	width: 100%;
+}
+
+.col-half {
+	width: calc(100% / 2);
+}
+
+.col-third {
+	width: calc(100% / 3);
+}
+
+/* actual styling begins */
+
+body {
+	margin: auto;
+	padding: 0 0.5em;
+	max-width: var(--page-width);
+}
+
+h1 {
+	font-size: 4.5em;
+	padding-bottom: 10px;
+}
+
+a.button {
+	border: solid 1px black;
+	color: black;
+	padding: 0.25em 2.5em;
+	text-decoration: none;
+}
+
+a.button:hover {
+	color: white;
+	background: black;
+}
+
+/* navigation */
+
+nav {
+	background: var(--gray);
+	left: 0;
+	padding: 2.5em 0;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0;
+}
+
+nav a {
+	color: black;
+	margin-right: 3.5em;
+	text-decoration: none;
+}
+
+nav a, nav img {
+	vertical-align: middle;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+/* banner */
+
+#banner {
+	border-bottom: solid 1px black;
+	padding-bottom: 4.5em;
+	padding-top: 117px;
+	text-align: center;
+}
+
+#banner.row {
+	margin: 4.5em 0;
+}
+
+#banner section {
+	vertical-align: middle;
+}
+
+/* footer */
+
+footer {
+	border-top: solid 1px black;
+}
+
+#footer-copyright {
+	text-align: center;
+}
